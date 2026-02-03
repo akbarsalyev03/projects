@@ -157,5 +157,6 @@ function clear_column(array $matrix, int $number): array
         }
     }
 
-    return $matrix;
+    unset($matrix[$number]);
+    return array_values($matrix);
 }
