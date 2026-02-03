@@ -16,22 +16,10 @@ if (session_status() === PHP_SESSION_NONE) {
             <input type="submit" value="Yuklash" />
         </form>
         <br>
-             <?php
-             if (isset($_SESSION["error_1"])) {
-                 echo "<p>" . $_SESSION["error_1"] . "</p>";
-             }
-             if (isset($_SESSION["error_2"])) {
-                 echo "<p>" . $_SESSION["error_2"] . "</p>";
-             }
-             if (isset($_SESSION["error_3"])) {
-                 echo "<p>" . $_SESSION["error_3"] . "</p>";
-             }
-             if (isset($_SESSION["error_4"])) {
-                 echo "<p>" . $_SESSION["error_4"] . "</p>";
-             }
-             if (isset($_SESSION["error_5"])) {
-                 echo "<p>" . $_SESSION["error_5"] . "</p>";
-             }
-             ?>
+             <?php for ($i = 1; $i <= 5; $i++) {
+                 if (isset($_SESSION["error_$i"])) {
+                     echo "<p>" . $_SESSION["error_$i"] . "</p>";
+                 }
+             } ?>
     </body>
 </html>
