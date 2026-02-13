@@ -56,7 +56,7 @@ csv-editor/
 
 ```bash
 git clone https://github.com/akbarsalyev03/projects.git
-cd project/csv-editor
+cd projects/csv-editor
 ```
 
 ### 2️⃣ Start Docker containers
@@ -68,7 +68,7 @@ docker-compose up -d --build
 ### 3️⃣ Open in browser
 
 ```text
-http://localhost
+http://localhost:8080
 ```
 
 If a different port is specified in `docker-compose.yml`, use the appropriate port.
